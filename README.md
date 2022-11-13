@@ -35,7 +35,7 @@ I made the game Breakout, in which we must use a platform to move to the sides t
 
 ## Portfolio Link
 
-`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Breakout%20page`
+`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Breakout%20Page`
 
 ## Video
 
