@@ -23,19 +23,9 @@ I made the game Breakout, in which we must use a platform to move to the sides t
 2. CSS3
 3. HTML5
 
-## Galery
-
-![Breakout-page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Javascript/Imagenes/breakout-0.jpg)
-
-![Breakout-page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Javascript/Imagenes/breakout-1.jpg)
-
-![Breakout-page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Javascript/Imagenes/breakout-2.jpg)
-
-![Breakout-page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Javascript/Imagenes/breakout-3.jpg)
-
 ## Portfolio Link
 
-`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Breakout%20Page`
+[`https://www.diegolibonati.com.ar/#/project/49`](https://www.diegolibonati.com.ar/#/project/49)
 
 ## Video
 
