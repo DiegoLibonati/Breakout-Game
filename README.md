@@ -24,6 +24,10 @@
 
 I made the game Breakout, in which we must use a platform to move to the sides to hit the ball and in this way the ball hits the blocks. Once we knock down all the blocks we win, if the ball hits the bottom we lose. The controls are the left and right arrows.
 
+## IMPORTANT 
+
+- ¡NOT SUPPORT FOR MOBILE!
+
 ## Technologies used
 
 1. Typescript
