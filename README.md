@@ -1,4 +1,4 @@
-# Breakout-Game-Page
+# Breakout Game
 
 ## Getting Started
 
@@ -26,7 +26,7 @@ I made the game Breakout, in which we must use a platform to move to the sides t
 
 ## IMPORTANT 
 
-- ¡NOT SUPPORT FOR MOBILE!
+¡NOT SUPPORT FOR MOBILE!
 
 ## Technologies used
 
@@ -36,7 +36,7 @@ I made the game Breakout, in which we must use a platform to move to the sides t
 
 ## Portfolio Link
 
-[`https://www.diegolibonati.com.ar/#/project/49`](https://www.diegolibonati.com.ar/#/project/49)
+[`https://www.diegolibonati.com.ar/#/project/Breakout-Game`](https://www.diegolibonati.com.ar/#/project/Breakout-Game)
 
 ## Video
 
