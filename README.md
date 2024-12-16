@@ -37,7 +37,6 @@ I made the game Breakout, in which we must use a platform to move to the sides t
 "@testing-library/user-event": "^14.5.2"
 "jest": "^29.7.0"
 "jest-environment-jsdom": "^29.7.0"
-"jest-fixed-jsdom": "^0.0.9"
 "ts-jest": "^29.2.5"
 "typescript": "^5.2.2"
 "vite": "^5.0.8"
