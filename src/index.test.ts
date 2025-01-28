@@ -21,7 +21,7 @@ describe("index.ts", () => {
     });
 
     test("It must render the game board and score.", () => {
-      const boardPlay = document.querySelector(".blocks") as HTMLElement;
+      const boardPlay = document.querySelector(".game__blocks") as HTMLElement;
       const score = screen.getByText(`Score:`);
 
       expect(score).toBeInTheDocument();

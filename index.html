@@ -17,22 +17,28 @@
     />
   </head>
   <body>
-    <header class="header__wrapper">
-      <div>
-        <img src="./src/assets/DL.png" alt="diego libonati logo" />
+    <header class="header-wrapper">
+      <div class="header-wrapper__logo">
+        <img
+          src="./src/assets/DL.png"
+          alt="diego libonati logo"
+          class="header-wrapper__logo-img"
+        />
       </div>
 
-      <div>
-        <h2>BREAKOUT</h2>
+      <div class="header-wrapper__content">
+        <h2 class="header-wrapper__content-title">BREAKOUT</h2>
       </div>
     </header>
 
     <section class="game">
-      <div class="score">
-        <p>Score: <span id="counter">0</span></p>
+      <div class="game__score">
+        <p class="game__score-text">
+          Score: <span id="counter" class="game__score-count">0</span>
+        </p>
       </div>
 
-      <div class="blocks"></div>
+      <div class="game__blocks"></div>
     </section>
 
     <script type="module" src="./src/index.ts"></script>

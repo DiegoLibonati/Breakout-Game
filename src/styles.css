@@ -1,4 +1,4 @@
-.header__wrapper {
+.header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -8,13 +8,13 @@
   background: var(--secondary-color);
 }
 
-.header__wrapper div img {
+.header-wrapper__logo-img {
   height: 10rem;
   width: 10rem;
   object-fit: cover;
 }
 
-.header__wrapper div h2 {
+.header-wrapper__content-title {
   font-size: 5rem;
   color: var(--white-color);
 }
@@ -28,24 +28,24 @@
   height: 70%;
 }
 
-.score {
+.game__score {
   position: relative;
   top: -20rem;
   letter-spacing: 0.1rem;
   margin: 1rem;
 }
 
-.score p {
+.game__score-text {
   font-size: 3rem;
   color: var(--white-color);
 }
 
-#counter {
+.game__score-count {
   font-size: 3rem;
   color: var(--white-color);
 }
 
-.blocks {
+.game__blocks {
   position: absolute;
   width: 60rem;
   height: 30rem;
