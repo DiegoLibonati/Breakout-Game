@@ -8,13 +8,13 @@
   background: var(--secondary-color);
 }
 
-.header-wrapper__logo-img {
+.header-wrapper__logo {
   height: 10rem;
   width: 10rem;
   object-fit: cover;
 }
 
-.header-wrapper__content-title {
+.header-wrapper__title {
   font-size: 5rem;
   color: var(--white-color);
 }
@@ -28,14 +28,14 @@
   height: 70%;
 }
 
-.game__score {
+.game__header {
   position: relative;
   top: -20rem;
   letter-spacing: 0.1rem;
   margin: 1rem;
 }
 
-.game__score-text {
+.game__score {
   font-size: 3rem;
   color: var(--white-color);
 }

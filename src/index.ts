@@ -98,8 +98,8 @@ const checkForCollisions = () => {
     clearInterval(intervalBall);
     document.removeEventListener("keydown", moveUser);
     scoreElement.innerHTML = !blocks.length
-      ? `<p class="game__score-text"> You WIN </p>`
-      : `<p class="game__score-text"> You score was: ${score}, but you lose. </p>`;
+      ? `<p class="game__score"> You WIN </p>`
+      : `<p class="game__score"> You score was: ${score}, but you lose. </p>`;
   }
 
   for (let i = 0; i < blocks.length; i++) {
