@@ -26,12 +26,13 @@ I made the game Breakout, in which we must use a platform to move to the sides t
 #### Dependencies
 
 ```
-"@types/jest": "^29.5.14"
+There are no dependencies.
 ```
 
 #### devDependencies
 
 ```
+"@types/jest": "^29.5.14"
 "@testing-library/dom": "^10.4.0"
 "@testing-library/jest-dom": "^6.6.3"
 "@testing-library/user-event": "^14.5.2"
