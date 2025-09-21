@@ -1,4 +1,4 @@
-import { User } from "./User";
+import { User } from "@src/models/User";
 
 const USER = {
   position: { x: 2, y: 2 },

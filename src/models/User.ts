@@ -1,4 +1,4 @@
-import { Coords, MoveKeys } from "../entities/vite-env";
+import { Coords, MoveKeys } from "@src/entities/vite-env";
 
 export class User {
   constructor(public position: Coords) {}

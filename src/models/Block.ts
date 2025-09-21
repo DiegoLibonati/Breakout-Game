@@ -1,4 +1,4 @@
-import { Coords, Sizes } from "../entities/vite-env";
+import { Coords, Sizes } from "@src/entities/vite-env";
 
 export class Block {
   public bottomLeft: Coords;

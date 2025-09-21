@@ -1,4 +1,4 @@
-import { Block } from "./Block";
+import { Block } from "@src/models/Block";
 
 const BLOCK = {
   position: { x: 2, y: 2 },

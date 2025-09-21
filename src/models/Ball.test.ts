@@ -1,4 +1,4 @@
-import { Ball } from "./Ball";
+import { Ball } from "@src/models/Ball";
 
 const BALL = {
   diameter: 20,

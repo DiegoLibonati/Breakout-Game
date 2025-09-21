@@ -1,10 +1,10 @@
-import { Coords, Rows, Sizes } from "./entities/vite-env";
+import { Coords, Rows, Sizes } from "@src/entities/vite-env";
 
-import { getElements } from "./helpers/getElements";
+import { getElements } from "@src/helpers/getElements";
 
-import { Ball } from "./models/Ball";
-import { Block } from "./models/Block";
-import { User } from "./models/User";
+import { Ball } from "@src/models/Ball";
+import { Block } from "@src/models/Block";
+import { User } from "@src/models/User";
 
 // Board Config
 const widthBoard: number = 600;

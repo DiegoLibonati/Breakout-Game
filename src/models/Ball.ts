@@ -1,4 +1,4 @@
-import { Coords } from "../entities/vite-env";
+import { Coords } from "@src/entities/vite-env";
 
 export class Ball {
   constructor(
