@@ -26,6 +26,7 @@ I made the game Breakout, in which we must use a platform to move to the sides t
 1. Typescript
 2. CSS3
 3. HTML5
+4. Vite
 
 ## Libraries used
 
