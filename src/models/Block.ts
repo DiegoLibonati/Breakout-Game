@@ -1,4 +1,6 @@
-import { Coords, Sizes } from "@src/entities/vite-env";
+import { Coords, Sizes } from "@src/entities/app";
+
+import { Block as BlockComponent } from "@src/components/Block/Block";
 
 export class Block {
   public bottomLeft: Coords;
@@ -17,13 +19,6 @@ export class Block {
   }
 
   create(): HTMLDivElement {
-    const block = document.createElement("div") as HTMLDivElement;
-
-    block.classList.add("block");
-
-    block.style.left = `${this.bottomLeft.x}px`;
-    block.style.bottom = `${this.bottomLeft.y}px`;
-
-    return block;
+    return BlockComponent({ x: this.bottomLeft.x, y: this.bottomLeft.y });
   }
 }

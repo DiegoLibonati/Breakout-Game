@@ -1,4 +1,6 @@
-import { Coords } from "@src/entities/vite-env";
+import { Coords } from "@src/entities/app";
+
+import { Ball as BallComponent } from "@src/components/Ball/Ball";
 
 export class Ball {
   constructor(
@@ -8,14 +10,7 @@ export class Ball {
   ) {}
 
   create(): HTMLDivElement {
-    const ball = document.createElement("div") as HTMLDivElement;
-
-    ball.classList.add("ball");
-
-    ball.style.left = `${this.position.x}px`;
-    ball.style.bottom = `${this.position.y}px`;
-
-    return ball;
+    return BallComponent({ x: this.position.x, y: this.position.y });
   }
 
   move(): void {

@@ -1,17 +1,12 @@
-import { Coords, MoveKeys } from "@src/entities/vite-env";
+import { Coords, MoveKeys } from "@src/entities/app";
+
+import { User as UserComponent } from "@src/components/User/User";
 
 export class User {
   constructor(public position: Coords) {}
 
   create(): HTMLDivElement {
-    const user = document.createElement("div") as HTMLDivElement;
-
-    user.classList.add("user");
-
-    user.style.left = `${this.position.x}px`;
-    user.style.bottom = `${this.position.y}px`;
-
-    return user;
+    return UserComponent({ x: this.position.x, y: this.position.y });
   }
 
   move(key: MoveKeys): void {

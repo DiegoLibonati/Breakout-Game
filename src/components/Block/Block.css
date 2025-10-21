@@ -1,0 +1,7 @@
+.block {
+  position: absolute;
+  width: 10rem;
+  height: 2rem;
+  background-color: var(--block-color);
+  border: 0.1rem solid var(--black-color);
+}

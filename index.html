@@ -11,7 +11,10 @@
       name="description"
       content="Break all the blocks without losing the ball to win."
     />
-    <meta name="keywords" content="Breakout, breakout, Breakout Game, breakout game, Game" />
+    <meta
+      name="keywords"
+      content="Breakout, breakout, Breakout Game, breakout game, Game"
+    />
     <meta name="author" content="Diego Libonati" />
 
     <meta property="og:title" content="Breakout Game" />
@@ -36,7 +39,7 @@
     <!-- <link rel="manifest" href="/manifest.json" /> -->
 
     <link rel="stylesheet" type="text/css" href="./src/index.css" />
-    <link rel="stylesheet" type="text/css" href="./src/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./src/styles/css/header.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,29 +48,21 @@
     />
   </head>
   <body>
-    <header class="header-wrapper">
-      <div class="header-wrapper__illustration">
+    <header class="header">
+      <div class="header__illustration">
         <img
-          src="./src/assets/DL.png"
+          src="./src/assets/pngs/DL.png"
           alt="diego libonati logo"
-          class="header-wrapper__logo"
+          class="header__logo"
         />
       </div>
 
-      <div class="header-wrapper__content">
-        <h2 class="header-wrapper__title">BREAKOUT</h2>
+      <div class="header__content">
+        <h2 class="header__title">BREAKOUT</h2>
       </div>
     </header>
 
-    <section class="game">
-      <div class="game__header">
-        <p class="game__score">
-          Score: <span id="counter" class="game__score-count">0</span>
-        </p>
-      </div>
-
-      <div class="game__blocks"></div>
-    </section>
+    <div id="app"></div>
 
     <script type="module" src="./src/index.ts"></script>
   </body>

@@ -65,3 +65,5 @@ https://user-images.githubusercontent.com/99032604/199374036-1b0e5ac6-860e-4dfa-
 2. Execute: `yarn test` or `npm test`
 
 ## Known Issues
+
+1. Erratic behavior in certain situations with the `ball`.
