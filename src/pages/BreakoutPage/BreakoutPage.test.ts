@@ -27,7 +27,7 @@ describe("BreakoutPage.ts", () => {
       expect(container).toBeInTheDocument();
       expect(container.className).toBe("breakout-page");
 
-      const game = container.querySelector(".game");
+      const game = container.querySelector<HTMLElement>(".game");
       expect(game).toBeTruthy();
     });
 
@@ -45,7 +45,8 @@ describe("BreakoutPage.ts", () => {
     test("It should render a section with game blocks", () => {
       renderComponent();
 
-      const blocksSection = document.querySelector(".game__blocks");
+      const blocksSection =
+        document.querySelector<HTMLDivElement>(".game__blocks");
       expect(blocksSection).toBeTruthy();
       expect(blocksSection).toHaveClass("game__blocks");
     });
@@ -55,7 +56,7 @@ describe("BreakoutPage.ts", () => {
     test("It should render user element", () => {
       renderComponent();
 
-      const userElement = document.querySelector(".user");
+      const userElement = document.querySelector<HTMLDivElement>(".user");
       expect(userElement).toBeTruthy();
       expect(userElement?.tagName).toBe("DIV");
     });
@@ -63,7 +64,7 @@ describe("BreakoutPage.ts", () => {
     test("It should render ball element", () => {
       renderComponent();
 
-      const ballElement = document.querySelector(".ball");
+      const ballElement = document.querySelector<HTMLDivElement>(".ball");
       expect(ballElement).toBeTruthy();
       expect(ballElement?.tagName).toBe("DIV");
     });
@@ -71,7 +72,7 @@ describe("BreakoutPage.ts", () => {
     test("It should render multiple blocks", () => {
       renderComponent();
 
-      const allBlocks = document.querySelectorAll(".block");
+      const allBlocks = document.querySelectorAll<HTMLDivElement>(".block");
       expect(allBlocks.length).toBeGreaterThan(0);
     });
   });
@@ -132,7 +133,7 @@ describe("BreakoutPage.ts", () => {
     test("It should show WIN message when all blocks are removed", () => {
       renderComponent();
 
-      const header = document.querySelector(".game__header")!;
+      const header = document.querySelector<HTMLDivElement>(".game__header")!;
       header.innerHTML = `<p class="game__score"> You WIN </p>`;
 
       expect(header.textContent).toContain("WIN");
@@ -141,7 +142,7 @@ describe("BreakoutPage.ts", () => {
     test("It should show lose message when ball reaches bottom", () => {
       renderComponent();
 
-      const header = document.querySelector(".game__header")!;
+      const header = document.querySelector<HTMLDivElement>(".game__header")!;
       header.innerHTML = `<p class="game__score"> You score was: 0, but you lose. </p>`;
 
       expect(header.textContent).toContain("lose");

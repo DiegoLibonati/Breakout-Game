@@ -197,7 +197,7 @@ describe("User.ts", () => {
       renderComponent(props1);
       renderComponent(props2);
 
-      const allUsers = document.querySelectorAll(".user");
+      const allUsers = document.querySelectorAll<HTMLDivElement>(".user");
 
       expect(allUsers.length).toBe(2);
     });
