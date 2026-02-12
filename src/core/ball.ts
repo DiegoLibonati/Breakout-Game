@@ -1,6 +1,7 @@
-import { Coords } from "@src/entities/app";
+import type { Coords } from "@/types/app";
+import type { BallComponent as BallComponentT } from "@/types/components";
 
-import { Ball as BallComponent } from "@src/components/Ball/Ball";
+import { Ball as BallComponent } from "@/components/Ball/Ball";
 
 export class Ball {
   constructor(
@@ -9,7 +10,7 @@ export class Ball {
     public direction: Coords
   ) {}
 
-  create(): HTMLDivElement {
+  create(): BallComponentT {
     return BallComponent({ x: this.position.x, y: this.position.y });
   }
 

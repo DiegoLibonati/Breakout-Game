@@ -1,9 +1,10 @@
-import { BallProps } from "@src/entities/props";
+import type { BallProps } from "@/types/props";
+import type { BallComponent } from "@/types/components";
 
-import "@src/components/Ball/Ball.css";
+import "@/components/Ball/Ball.css";
 
-export const Ball = ({ x, y }: BallProps): HTMLDivElement => {
-  const divRoot = document.createElement("div") as HTMLDivElement;
+export const Ball = ({ x, y }: BallProps): BallComponent => {
+  const divRoot = document.createElement("div");
   divRoot.className = "ball";
 
   divRoot.style.left = `${x}px`;

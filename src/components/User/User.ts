@@ -1,8 +1,9 @@
-import { UserProps } from "@src/entities/props";
+import type { UserProps } from "@/types/props";
+import type { UserComponent } from "@/types/components";
 
-import "@src/components/User/User.css";
+import "@/components/User/User.css";
 
-export const User = ({ x, y }: UserProps): HTMLDivElement => {
+export const User = ({ x, y }: UserProps): UserComponent => {
   const divRoot = document.createElement("div");
   divRoot.className = "user";
 

@@ -21,19 +21,19 @@
 
 .game__score {
   font-size: 3rem;
-  color: var(--white-color);
+  color: var(--color-white);
 }
 
 .game__score-count {
   font-size: 3rem;
-  color: var(--white-color);
+  color: var(--color-white);
 }
 
 .game__blocks {
   position: absolute;
   width: 60rem;
   height: 30rem;
-  border: 0.1rem solid var(--black-color);
+  border: 0.1rem solid var(--color-black);
   margin: 1rem;
-  background: var(--secondary-color);
+  background: var(--color-secondary);
 }

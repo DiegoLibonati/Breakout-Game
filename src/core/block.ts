@@ -1,6 +1,7 @@
-import { Coords, Sizes } from "@src/entities/app";
+import type { Coords, Sizes } from "@/types/app";
+import type { BlockComponent as BlockComponentT } from "@/types/components";
 
-import { Block as BlockComponent } from "@src/components/Block/Block";
+import { Block as BlockComponent } from "@/components/Block/Block";
 
 export class Block {
   public bottomLeft: Coords;
@@ -8,7 +9,10 @@ export class Block {
   public topLeft: Coords;
   public topRight: Coords;
 
-  constructor(public position: Coords, public sizes: Sizes) {
+  constructor(
+    public position: Coords,
+    public sizes: Sizes
+  ) {
     this.bottomLeft = { x: position.x, y: position.y };
     this.bottomRight = { x: position.x + sizes.width, y: position.y };
     this.topLeft = { x: position.x, y: position.y + sizes.height };
@@ -18,7 +22,7 @@ export class Block {
     };
   }
 
-  create(): HTMLDivElement {
+  create(): BlockComponentT {
     return BlockComponent({ x: this.bottomLeft.x, y: this.bottomLeft.y });
   }
 }
