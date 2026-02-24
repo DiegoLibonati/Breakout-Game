@@ -35,7 +35,7 @@ I made the game Breakout, in which we must use a platform to move to the sides t
 #### Dependencies
 
 ```
-There are no dependencies.
+No production dependencies - Pure Vanilla TypeScript
 ```
 
 #### devDependencies
