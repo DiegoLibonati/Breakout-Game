@@ -6,15 +6,6 @@ This project was created primarily for **educational and learning purposes**.
 While it is well-structured and could technically be used in production, it is **not intended for commercialization**.  
 The main goal is to explore and demonstrate best practices, patterns, and technologies in software development.
 
-## Getting Started
-
-1. Clone the repository
-2. Navigate to the project folder
-3. Execute: `npm install`
-4. Execute: `npm run dev`
-
-The application will open automatically at `http://localhost:3000`
-
 ## Description
 
 **Brick Pulse** is a browser-based implementation of the classic Breakout arcade game, built entirely with vanilla TypeScript and no production dependencies. The player controls a horizontal paddle at the bottom of the game board using the left and right arrow keys. A ball bounces continuously across the board, and the objective is to use the paddle to keep the ball in play while it collides with and destroys a grid of 18 blocks arranged in three rows at the top of the board.
@@ -25,9 +16,7 @@ The project is structured around a three-layer architecture: pure game logic cla
 
 The codebase follows strict TypeScript configuration with full type safety, and is covered by a suite of unit and integration tests using Jest and Testing Library, ensuring correctness of game mechanics, rendering, user interaction, and cleanup behavior.
 
-## IMPORTANT
-
-¡NOT SUPPORT FOR MOBILE!
+> **Note:** mobile is not supported. The game is designed for desktop browsers and relies on physical keyboard arrow keys for paddle control.
 
 ## Technologies used
 
@@ -67,15 +56,20 @@ No production dependencies - Pure Vanilla TypeScript
 "vite": "^7.1.6"
 ```
 
-## Portfolio Link
+## Getting Started
 
-[`https://www.diegolibonati.com.ar/#/project/brick-pulse`](https://www.diegolibonati.com.ar/#/project/brick-pulse)
+With the stack above in place, the project can be cloned and run locally:
 
-## Video
+1. Clone the repository
+2. Navigate to the project folder
+3. Execute: `npm install`
+4. Execute: `npm run dev`
 
-https://user-images.githubusercontent.com/99032604/199374036-1b0e5ac6-860e-4dfa-8810-0895a085983c.mp4
+The application will open automatically at `http://localhost:3000`.
 
 ## Testing
+
+Beyond running the game, the project ships with a Jest + Testing Library suite covering core logic, components, and the page orchestrator.
 
 1. Navigate to the project folder
 2. Execute: `npm test`
@@ -86,11 +80,9 @@ For coverage report:
 npm run test:coverage
 ```
 
-## Security
+## Security Audit
 
-### npm audit
-
-Check for vulnerabilities in dependencies:
+Once tests pass, check the dependency tree for known vulnerabilities before sharing or publishing a build:
 
 ```bash
 npm audit
@@ -99,3 +91,7 @@ npm audit
 ## Known Issues
 
 None at the moment.
+
+## Portfolio Link
+
+[`https://www.diegolibonati.com.ar/#/project/brick-pulse`](https://www.diegolibonati.com.ar/#/project/brick-pulse)
