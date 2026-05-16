@@ -89,6 +89,56 @@ Once tests pass, check the dependency tree for known vulnerabilities before shar
 npm audit
 ```
 
+## Continuous Integration
+
+The repository ships with a **GitHub Actions** pipeline defined in [`.github/workflows/ci.yml`](.github/workflows/ci.yml). It runs automatically on every `push` and `pull_request` targeting the `main` branch. All jobs use the Node.js version pinned in [`.nvmrc`](.nvmrc) and install dependencies with `npm ci` so the lockfile is honoured exactly.
+
+### Pipeline overview
+
+```
+                      ┌─── PR or push to main ───┐
+                      ▼                          ▼
+┌──────────────────────┐  ┌──────────────────┐  ┌──────────────────┐
+│   lint-and-audit     │─▶│      testing     │─▶│      build       │
+│   eslint · tsc       │  │  jest (jsdom)    │  │ vite production  │
+└──────────────────────┘  └──────────────────┘  └──────────────────┘
+```
+
+The jobs run sequentially — each one declares `needs:` on the previous, so a failure short-circuits the rest of the pipeline.
+
+### Validation jobs (run on every PR and push)
+
+1. **`lint-and-audit`** — runs `npm run lint` (ESLint flat config v9+ with TypeScript strict + stylistic rules) and `npm run type-check` (TypeScript `--noEmit` against `tsconfig.app.json`).
+2. **`testing`** — runs `npm run test`, executing the full Jest suite under `jest-environment-jsdom`. Covers `src/core/`, `src/components/` and `src/pages/BreakoutPage/` with mocked CSS imports.
+3. **`build`** — runs `npm run build`, which performs a final type-check via `tsc` and produces the optimized Vite bundle in `dist/`. Acts as a smoke test that the production output compiles end-to-end.
+
+### Running the same checks locally
+
+Before pushing, you can reproduce exactly what CI does:
+
+```bash
+# lint-and-audit
+npm run lint
+npm run type-check
+
+# testing
+npm run test
+
+# build
+npm run build
+```
+
+Pre-commit hooks via **Husky + lint-staged** already run ESLint and Prettier on staged files, so most lint issues are caught before the pipeline even starts.
+
+### Where the build outputs live
+
+| Output                                           | Location                     |
+| ------------------------------------------------ | ---------------------------- |
+| Validation logs (lint, type-check, tests, build) | **Actions** tab on GitHub    |
+| Production bundle (`dist/`)                      | Ephemeral, inside the runner |
+
+> **Note:** This pipeline only validates the repository — it does not publish artifacts, create releases, or deploy the bundle anywhere. Hosting the built site is left to the consumer.
+
 ## Known Issues
 
 None at the moment.
